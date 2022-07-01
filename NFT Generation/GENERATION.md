@@ -56,9 +56,9 @@ When generating NFTs, it is always best to separate the process into two steps: 
 ]
 ```
 
-This sample JSON file holds every piece of information we need to be able to build the exact NFT we see above. The NFT is represented by everything inside of the set of curly braces “{}”. Here you can see we have each of the trait categories on the left mapped to its corresponding sub-trait on the right. 
+This sample JSON file holds every piece of information we need to be able to build the exact NFT we see above. The NFT is represented by everything inside of the set of curly braces “{}”. Here, we have each of the trait categories on the left mapped to its corresponding sub-trait on the right. 
 
-Awesome! we have successfully created a metadata file with exactly one entry. Now this would be great if we wanted to generate just one NFT, however a typical collection often contains thousands of NFTs. The Rowdy Roos collection, for example, 9,999 different NFTs. That's a lot of NFTs! A JSON file containing 9,999 different entries is very long and is not something anybody should write by hand. To see what a full-length metadata file looks like, you can view the inlcuded metadata file I generated for this tutorial series [here](/NFT%20Generation/code/metadata.json).
+Awesome! we have successfully created a metadata file with exactly one entry. Now this would be great if we wanted to generate just one NFT, however a typical collection often contains thousands of NFTs. The Rowdy Roos collection, for example, has 9,999 different NFTs. That's a lot of NFTs! A JSON file containing 9,999 different entries is very long and is not something anybody should write by hand. Which is why we will code a metadata generator to do this process for us. To see what a full-length metadata file looks like, you can view the inlcuded metadata file I generated for this tutorial series [here](/NFT%20Generation/code/metadata.json).
 
 ## Metadata Generation
 
@@ -66,7 +66,7 @@ Pretty cool right? While this file doesn't include the official metadata, it doe
 
 So how does the metadata generator work? Well, for each trait category, there is a list of all of the sub-traits' names and their corresponding weights. The weights determine how many times each sub-trait appears in the collection. Since this is a collection of 9,999 NFTs, the weights for each category must add up to 9,999.
 
-Below, I included a snippet of the code which demonstrates sub-traits and their corresponding weights for the 'background' trait category.
+Below, I included a snippet of the code which includes the sub-traits and their corresponding weights for the 'background' trait category.
 
 ```python
 # sub-traits and their corresponding weights for the 'background' trait category
