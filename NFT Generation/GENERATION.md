@@ -1,4 +1,4 @@
-# Generating artwork for 2D NFTs
+# Generating Artwork For 2D NFTs
 
 Each NFT is unique and is comprised of a random combination of different traits each belonging to its own trait group. When building an NFT, you must first decide how you want to group your traits. For example, Rowdy Roos has 13 different trait groups: Accessory, Background, Base, Eyes, Hat, Item, Mouth, Pouch, Rank, Shirt, Shoes, Spring, and Tail. These are the unique building blocks that make up each Rowdy Roo.
 
@@ -76,5 +76,39 @@ After it finishes igenerating all of the combinations, it exports them to a json
 
 Art generation is the second stage in the NFT generation process. Once you have the metadata, you can use it as the blueprint to generate all your art. This blueprint can be run through the art generator as many times as you want and will always generate the exact same output. This can be very helpful when testing new art combinations. Maybe a hat didn't fit right the first time so you have to generate all of the artwork again. Since you already have the blueprint for the art made, you can ensure that you export the same Rowdy Roos each time.
 
+To see how the art generation process works, I have included the source code for the Rowdy Roo's [art generator](/NFT%20Generation/code/art_generator.py).
+
+At the top of the art generator file you can see each of the trait names which were defined in the metadata generator file. Each trait name is then paired with the corresponding filename containing the artwork for that trait.
+
+Here is the sample file tree 
+
+```
+generator/
+├── art_generator.json
+├── metadata.json
+└── resources/
+    ├── backgrounds/
+    │   ├── background1.png
+    │   ├── background2.png
+    │   └── ...
+    ├── bases/
+    │   ├── base1.png
+    │   ├── base2.png
+    │   └── ...
+    ├── springs/
+    │   ├── spring1.png
+    │   ├── spring2.png
+    │   └── ...
+    ├── springs/
+    ├── eyes/
+    ├── mouths/
+    ├── tails/
+    ├── pouches/
+    ├── shirts/
+    ├── accessories/
+    ├── items/
+    ├── shoes/
+    └── hats/
+```
 
 
