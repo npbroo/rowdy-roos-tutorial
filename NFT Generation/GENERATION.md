@@ -80,7 +80,21 @@ To see how the art generation process works, I have included the source code for
 
 At the top of the art generator file you can see each of the trait names which were defined in the metadata generator file. Each trait name is then paired with the corresponding filename containing the artwork for that trait.
 
-Here is the sample file tree 
+An example of this is included below:
+
+```
+# MAPPINGS FOR THE FILENAMES CORRESPONDING TO EACH TRAIT NAME
+background_files = {
+    "pink":"background2", 
+    "orange":"background3", 
+    "purple":"background6", 
+    "beige":"background1", 
+    "green":"background4", 
+    "blue":"background5"
+}
+```
+
+And here is what the directory tree looks like for this project:
 
 ```
 generator/
@@ -110,5 +124,13 @@ generator/
     ├── shoes/
     └── hats/
 ```
+
+This file tree contains every single deconstructed trait saved as a png image with a tranparent background of the same size. 
+
+If I was to open up the file 'resources/backgrounds/background1.png' it should be a pink background. I have not included the trait art assets in this tutorial due to legal reasons. But the art_generator script is open source and can be edited for use with your art and custom project.
+
+The art generator works by scanning the metadata included in the JSON file. For each NFT represented in the metadata it stacks the artwork for each trait one at at time to create a finalized image which is then exported as the artwork for the Rowdy Roo.
+
+
 
 
