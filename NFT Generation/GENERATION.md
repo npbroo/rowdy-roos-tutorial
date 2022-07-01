@@ -47,20 +47,20 @@ Below is a copy of the metadata (in JSON format) for the NFT we have deconstruct
 
 ```json
 [
-{
-        "background": "green",
-        "base": "robot",
-        "spring": "gold",
-        "tail": "none",
-        "pouch": "none",
-        "eyes": "robot",
-        "shirt": "royal robe",
-        "accessory": "none",
-        "item": "royal staff",
-        "shoes": "robot",
-        "mouth": "gray beard",
-        "hat": "crown",
-        "tokenId": 40
-}
+    {
+            "background": "green",
+            "base": "robot",
+            "spring": "gold",
+            "tail": "none",
+            "pouch": "none",
+            "eyes": "robot",
+            "shirt": "royal robe",
+            "accessory": "none",
+            "item": "royal staff",
+            "shoes": "robot",
+            "mouth": "gray beard",
+            "hat": "crown",
+            "tokenId": 40
+    }
 ]
 ```
