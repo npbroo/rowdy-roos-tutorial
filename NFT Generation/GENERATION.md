@@ -74,7 +74,7 @@ backgrounds = ["pink", "orange", "purple", "beige", "green", "blue"]
 background_weights = [1000, 1500, 1500, 2000, 2000, 1999]
 ```
 
-The generator works by randomly selecting a sub-trait from each category for all 9,999 NFTs. after it selects a sub-trait, it subtracts 1 from the sub-trait's corresponding weight. This allows for an even distribution of traits across all NFTs and prevents traits from appearing more than the number of times specified in its trait weights.
+The generator works by randomly selecting a sub-trait from each category for all 9,999 NFTs. after it selects a sub-trait, it subtracts 1 from the sub-trait's corresponding weight. This allows for an even distribution of traits across all NFTs and prevents a trait from appearing more than the number of times specified in its trait weights list.
 
 After it finishes igenerating all of the combinations, it exports them to a JSON file called metadata. Give it a try yourself! Just download Python, and give the [metadata generator](/NFT%20Generation/code/metadata_generator.py) a run. You will have a brand new set of metadata for 9,999 Rowdy Roo NFT combinations.
 
