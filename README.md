@@ -1,23 +1,20 @@
-Rowdy Roo official Development Docs
+# Rowdy Roos Dev Tutorial
 
-Rowdy Roo Academy
 
-Building and NFT
+- How to generate NFTs 
 
-Deploying NFTs to the mainnet
+- Deploying NFTs to the mainnet
 
-How to generate NFTs 
+- How an ERC721 contract works
 
-How an ERC721 contract works
+- Understanding the rowdy roos contract
 
-Understanding the rowdy roos contract
+- How a staking contract works
 
-How a staking contract works
+- Merkle trees and ECDSA signatures
 
-Merkle trees and ECDSA signatures
+- Gasless whitelists
 
-Gasless whitelists
+- Rowdy roos staking
 
-Rowdy roos staking
-
-Website frontend to web3 connection
+- Website frontend to web3 connection
