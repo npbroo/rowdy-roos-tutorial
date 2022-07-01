@@ -13,10 +13,13 @@ Within each trait group there is a collection of sub traits. The sub-traits are 
 Here we can see that the bolded words on the left are the different trait groups and the number beside it represents the number of sub-traits within each trait group.
 
 If we click on the drop-down, we can see all of the different sub-traits for that category. In the example below, I chose to list traits for the ‘base’ category. Within this category there are 12 different types of bases which are custom to the Rowdy Roos project. The number to the right of each sub-trait represents the number of NFTs in the collection which have that trait. Here I have selected the ‘Robot’ trait, so we only see Rowdy Roos which have the ‘Robot’ base.
+
+![Trait Groups](/NFT%20Generation/images/subtraits.png)
  
 To the right of the ‘Robot’ sub-trait you can see that there are 400 NFTs in the entire Rowdy Roo collection which has this specific trait. Since the supply of our collection is 10,000 total NFTs, there is a 4% chance that any Rowdy Roo has this trait which makes it a very rare trait. 
 
-  
+![Trait Groups](/NFT%20Generation/images/nft.png)
+![Trait Groups](/NFT%20Generation/images/nft_metadata.png)
 
 Here you can see a Rowdy Roo on the left and all of the trait categories with the specific sub-traits the NFT is comprised of. Together, all the traits on the right make up the metadata for the Rowdy Roo. By layering these the traits, we can generate this unique kingly Rowdy Roo.
 
@@ -24,7 +27,15 @@ Here you can see a Rowdy Roo on the left and all of the trait categories with th
 
 Let’s further deconstruct this NFT and see each of the individual parts that it’s made of.
       
-   
+![Trait Groups](/NFT%20Generation/images/deconstructed_background.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed_base.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed_eyes.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed_hat.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed_item.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed_mouth.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed_shirt.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed_shoes.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed_spring.png)
 
 Here you can see all the individual traits which stack together to make this unique NFT. There are many programs and online software capable of doing this process automatically. But, for Rowdy Roos we wanted more control over the generation process and is why we built a custom program written with the Python coding language.
 
@@ -33,3 +44,23 @@ Here you can see all the individual traits which stack together to make this uni
 When generating NFTs, it is always best to separate the process into two steps: metadata generation and art generation. Metadata defines the NFT in a written format for each NFT in the entire collection. It can be stored in many different file formats, but we will use JSON format for this tutorial. JSON is a standard file format which can be easily read and parsed by coding languages such as Python. 
 
 Below is a copy of the metadata (in JSON format) for the NFT we have deconstructed above.
+
+```json
+[
+{
+        "background": "green",
+        "base": "robot",
+        "spring": "gold",
+        "tail": "none",
+        "pouch": "none",
+        "eyes": "robot",
+        "shirt": "royal robe",
+        "accessory": "none",
+        "item": "royal staff",
+        "shoes": "robot",
+        "mouth": "gray beard",
+        "hat": "crown",
+        "tokenId": 40
+}
+]
+```
