@@ -8,7 +8,7 @@ Trait groups are unique to the each NFT project and often change depending on th
 ## Sub Groups
 Within each trait group there is a collection of sub traits. The sub-traits are what change to give the NFT its own unique look and rarity.
 
-![Trait Groups](/images/trait_groups.png)
+![Trait Groups](/NFT%20Generation/images/trait_groups.png)
  
 Here we can see that the bolded words on the left are the different trait groups and the number beside it represents the number of sub-traits within each trait group.
 
