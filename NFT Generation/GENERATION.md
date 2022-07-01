@@ -27,15 +27,7 @@ Here you can see a Rowdy Roo on the left and all of the trait categories with th
 
 Let’s further deconstruct this NFT and see each of the individual parts that it’s made of.
       
-![Trait Groups](/NFT%20Generation/images/deconstructed_background.png)
-![Trait Groups](/NFT%20Generation/images/deconstructed_base.png)
-![Trait Groups](/NFT%20Generation/images/deconstructed_eyes.png)
-![Trait Groups](/NFT%20Generation/images/deconstructed_hat.png)
-![Trait Groups](/NFT%20Generation/images/deconstructed_item.png)
-![Trait Groups](/NFT%20Generation/images/deconstructed_mouth.png)
-![Trait Groups](/NFT%20Generation/images/deconstructed_shirt.png)
-![Trait Groups](/NFT%20Generation/images/deconstructed_shoes.png)
-![Trait Groups](/NFT%20Generation/images/deconstructed_spring.png)
+![Trait Groups](/NFT%20Generation/images/deconstructed.png)
 
 Here you can see all the individual traits which stack together to make this unique NFT. There are many programs and online software capable of doing this process automatically. But, for Rowdy Roos we wanted more control over the generation process and is why we built a custom program written with the Python coding language.
 
