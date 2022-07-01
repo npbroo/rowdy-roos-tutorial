@@ -58,7 +58,23 @@ Below is a copy of the metadata (in JSON format) for the NFT we have deconstruct
 
 This sample JSON file holds every piece of information we need to be able to build the exact NFT we see above. The NFT is represented by everything inside of the set of curly braces “{}”. Here you can see we have each of the trait categories on the left of the ‘:’ and the corresponding sub-trait on the right of the ‘:’. 
 
-Awesome! we have successfully created a metadata file with exactly one entry. Now this would be great if we wanted to generate just one NFT, however, a typical collection often has thousands of NFTs, and for Rowdy Roos, we have over 9,999 different NFTs. That's a lot of NFTs! A JSON file like that would need 9,999 different entries and would be very long. To see what a metadata file like that looks you can view the sample metadata file I generated for this tutorial series [here](/NFT%20Generation/metadata.json).
+Awesome! we have successfully created a metadata file with exactly one entry. Now this would be great if we wanted to generate just one NFT, however, a typical collection often has thousands of NFTs, and for Rowdy Roos, we have over 9,999 different NFTs. That's a lot of NFTs! A JSON file like that would need 9,999 different entries and would be very long. To see what a metadata file like that looks you can view the sample metadata file I generated for this tutorial series [here](/NFT%20Generation/code/metadata.json).
 
-Pretty cool right? While this file doesn't include the official metadata, it does include 9,999 brand new potential combinations for Rowdy Roos. These brand new never before seen combinations were actually generated on the fly using my [metadata generator](/NFT%20Generation/metadata_generator.py), and it only takes a matter of seconds.
+## Metadata Generation
+
+Pretty cool right? While this file doesn't include the official metadata, it does include 9,999 brand new potential combinations for Rowdy Roos. These brand new, never before seen combinations were actually generated on the fly using my [metadata generator](/NFT%20Generation/code/metadata_generator.py), and it only takes a matter of seconds.
+
+So how does the metadata generator work?
+
+For each trait category, there is a list of all of the sub-traits' names and their corresponding weights. The weights determine how many times each sub-trait appears in the collection. Since this is a collection of 9,999 NFTs, the weights for each category must add up to 9,999.
+
+The generator works by randomly selecting a sub-trait from each category for all 9,999 NFTs. after it selects a sub-trait, it subtracts 1 from the sub-trait's corresponding weight. This allows for an even distribution of traits across all NFTs and prevents traits from appearing more than the number of times specified in its trait weights.
+
+After it finishes igenerating all of the combinations, it exports them to a json file called metadata. Give it a try yourself! Just download Python, and give the [metadata generator](/NFT%20Generation/code/metadata_generator.py) a run. You will have a brand new set of metadata for 9,999 Rowdy Roo NFT combinations.
+
+## Art Generation
+
+Art generation is the second stage in the NFT generation process. Once you have the metadata, you can use it as the blueprint to generate all your art. This blueprint can be run through the art generator as many times as you want and will always generate the exact same output. This can be very helpful when testing new art combinations. Maybe a hat didn't fit right the first time so you have to generate all of the artwork again. Since you already have the blueprint for the art made, you can ensure that you export the same Rowdy Roos each time.
+
+
 
