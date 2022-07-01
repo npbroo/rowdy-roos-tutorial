@@ -55,3 +55,4 @@ Below is a copy of the metadata (in JSON format) for the NFT we have deconstruct
     }
 ]
 ```
+This JSON file holds every piece of information we need to be able to build the exact NFT we see above.The NFT is represented by everything inside of the set of curly braces “{}”. Here you can see we have each of the trait categories on the left of the ‘:’ and the corresponding sub-trait on the right of the ‘:’. 
