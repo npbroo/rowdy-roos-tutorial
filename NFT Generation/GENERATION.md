@@ -55,4 +55,7 @@ Below is a copy of the metadata (in JSON format) for the NFT we have deconstruct
     }
 ]
 ```
-This JSON file holds every piece of information we need to be able to build the exact NFT we see above.The NFT is represented by everything inside of the set of curly braces “{}”. Here you can see we have each of the trait categories on the left of the ‘:’ and the corresponding sub-trait on the right of the ‘:’. 
+
+This sample JSON file holds every piece of information we need to be able to build the exact NFT we see above. The NFT is represented by everything inside of the set of curly braces “{}”. Here you can see we have each of the trait categories on the left of the ‘:’ and the corresponding sub-trait on the right of the ‘:’. 
+
+Awesome! we have successfully created a metadata file with one entry. Now this would be great if we wanted to generate just one NFT. But, a typical collection has many different NFTs and for Rowdy Roos, we have over 9,999 different combinations. That's a lot of NFTs! A JSON file like that would need to be very long with 9,999 different entries. To see what a metadata file like that looks you can see a sample metadata file I generated [Here](/NFT%20Generation/metadata.json)
