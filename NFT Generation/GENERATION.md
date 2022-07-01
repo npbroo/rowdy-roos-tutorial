@@ -2,7 +2,7 @@
 
 Generating art for an NFT project may sound like a lot of work. And it can be if the artwork is created incorrectly or the generation process is not well organized. This tutorial aims to cover the basic steps required to generate your own 2D NFTs in a straight forward and easy to understand way.
 
-In order to generate our own NFTs, we must first understand that each NFT is unique. If we break down an NFT into its most basic components, we discover that it is comprised of a random combination of differnt traits separated by 'trait category'. When building your own NFT, you must begin by deciding on how you want to group your traits. For example, Rowdy Roos has 13 different trait categories: Accessory, Background, Base, Eyes, Hat, Item, Mouth, Pouch, Rank, Shirt, Shoes, Spring, and Tail. These are the unique building blocks that make up each Rowdy Roo.
+In order to generate our own NFTs, we must first understand that each NFT is unique. If we break down an NFT into its most basic components, we discover that it is comprised of a random combination of different traits separated by 'trait category'. When building your own NFT, you must begin by deciding on how you want to group your traits. For example, Rowdy Roos has 13 different trait categories: Accessory, Background, Base, Eyes, Hat, Item, Mouth, Pouch, Rank, Shirt, Shoes, Spring, and Tail. These are the unique building blocks that make up each Rowdy Roo.
 
 ## Trait Category
 Trait categories are unique to each NFT project and often change depending on the artwork and overall design of the NFT. However, every NFT belonging to a single project will have the exact same trait categories. These trait categories don’t determine rarity, they only represent the changing parts of an NFT. 
@@ -14,15 +14,15 @@ Each trait category contains a collection of sub-traits. The sub-traits are what
  
 Here, I have included a screenshot from OpenSea which is a popular exchange used to buy an sell NFTs. This also provides us with an easy-to-understand diagram for visualizing trait categories and their sub-traits. In the image above, we can see that the bolded words on the left are the different trait categories and the number beside it represents the number of sub-traits within each trait category.
 
-If we click on the drop-down, we can see all of the different sub-traits for that trait category. In the example below, I chose to list traits for the ‘base’ category. Within this category there are 12 different types of bases which are custom to the Rowdy Roos project. The number to the right of each sub-trait represents the number of NFTs in the collection which have that trait. Here I have selected the ‘Robot’ sub-trait under the 'base' category. This is why we only see Rowdy Roos which have the ‘Robot’ base.
+If we click on the drop-down, we can see all of the different sub-traits for that trait category. In the example below, I chose to list traits for the ‘base’ category. Within this category, there are 12 different types of bases which are custom to the Rowdy Roos project. The number to the right of each sub-trait represents the number of NFTs in the collection which have that trait. Here, I have selected the ‘Robot’ sub-trait under the 'base' category. This is why we only see Rowdy Roos which have the ‘Robot’ base.
 
 ![Sub-Traits](/NFT%20Generation/images/subtraits.png)
  
-To the right of the ‘Robot’ sub-trait you can see that there are 400 NFTs in the entire Rowdy Roo collection which has this specific trait. Since the supply of our collection is 10,000 total NFTs, there is a 4% chance that any Rowdy Roo has this trait. This makes it a rare trait. The more rare traits your NFT has, the rarer it is. This can often direclty increase an NFT's perceived value resulting in a potentially higher selling price.
+To the right of the ‘Robot’ sub-trait you can see that there are 400 NFTs in the entire Rowdy Roo collection which have this specific trait. Since the supply of our collection is ~10,000 total NFTs, there is a 4% chance that any Rowdy Roo has this trait. This makes it a rare trait. The more rare traits your NFT has, the rarer it is. This directly increases an NFT's perceived value resulting in a potentially higher selling price.
 
 ![NFT with Metadata](/NFT%20Generation/images/nft_with_metadata.png)
 
-Here, you can see a Rowdy Roo on the left, with all of the trait categories, and the specific sub-traits this NFT is comprised of. Together, all of the traits on the right make up what is known as the metadata for this Rowdy Roo. By layering these traits, we can generate this unique "kingly" Rowdy Roo.
+Here, you can see a Rowdy Roo on the left, with all of the trait categories, and the specific sub-traits this NFT is comprised of. Together, all of the traits on the right make up what is known as the 'metadata' for this Rowdy Roo. By layering these traits, we can generate this unique "kingly" Rowdy Roo.
 
 ## Deconstructed NFT
 
@@ -30,11 +30,11 @@ Let’s further deconstruct this NFT and see each of the individual parts that i
       
 ![A Deconstructed NFT](/NFT%20Generation/images/deconstructed.png)
 
-Here you can see all the different traits which can be stacked together to construct this unique NFT. There are many programs online which are available and capable of doing this process automatically. However many are limited and may not have all of the capabilities you need for your project. For Rowdy Roos, we wanted more control over the generation process and is why we built a custom program written with the Python coding language.
+Here you can see all the different traits which can be stacked together to construct this unique NFT. There are many programs online which are available and capable of doing this process automatically. However, many are limited and may not have all of the capabilities you need for your project. For Rowdy Roos, we wanted more control over the generation process and is why we built a custom program written with the Python coding language.
 
 ## Building your own Generator
 
-When generating NFTs, it is always best to separate the process into two steps: metadata generation and art generation. A project's full metadata file defines all of an NFT's sub-traits in a written format for each NFT in the entire collection. It can be stored in many different file formats, but we will use JSON format for this tutorial. JSON is a standard file format which can be easily read and parsed by coding languages such as Python. Below, I have included a copy of the metadata (in JSON format) for the "kingly" NFT we have deconstructed above.
+When generating NFTs, it is always best to separate the process into two steps: metadata generation and art generation. A project's full metadata file defines all of an NFT's sub-traits in a written format for each NFT in the entire collection. It can be stored in many different file formats, but we will use the JSON format for this tutorial. JSON is a standard file format which can be easily read and parsed by coding languages such as Python. Below, I have included a copy of the metadata (in JSON format) for the "kingly" NFT we have deconstructed above.
 
 ```json
 [
@@ -68,7 +68,7 @@ So how does the metadata generator work? Well, for each trait category, there is
 
 Below, I included a snippet of the code which demonstrates sub-traits and their corresponding weights for the 'background' trait category.
 
-```
+```python
 # sub-traits and their corresponding weights for the 'background' trait category
 backgrounds = ["pink", "orange", "purple", "beige", "green", "blue"]
 background_weights = [1000, 1500, 1500, 2000, 2000, 1999]
@@ -86,7 +86,7 @@ To see how the art generation process works, I have included the source code for
 
 At the top of the art generator file you can see each of the trait names which were previously defined in the metadata generator file. Each trait name is then mapped to the filename containing the artwork for that trait. Below is a snippet from the code for reference.
 
-```
+```python
 # trait names and their corresponding filename mappings for the 'background' trait category
 background_files = {
     "pink":"background2", 
