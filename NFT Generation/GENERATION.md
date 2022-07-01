@@ -18,7 +18,6 @@ If we click on the drop-down, we can see all of the different sub-traits for tha
  
 To the right of the ‘Robot’ sub-trait you can see that there are 400 NFTs in the entire Rowdy Roo collection which has this specific trait. Since the supply of our collection is 10,000 total NFTs, there is a 4% chance that any Rowdy Roo has this trait which makes it a very rare trait. 
 
-![Trait Groups](/NFT%20Generation/images/nft.png)
 ![Trait Groups](/NFT%20Generation/images/nft_metadata.png)
 
 Here you can see a Rowdy Roo on the left and all of the trait categories with the specific sub-traits the NFT is comprised of. Together, all the traits on the right make up the metadata for the Rowdy Roo. By layering these the traits, we can generate this unique kingly Rowdy Roo.
