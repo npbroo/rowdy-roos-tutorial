@@ -2,7 +2,6 @@ import random
 import json
 
 # array of traits and rarities
-
 backgrounds = ["pink", "orange", "purple", "beige", "green", "blue"]
 background_weights = [1000, 1500, 1500, 2000, 2000, 1999]
 

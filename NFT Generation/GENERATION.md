@@ -2,7 +2,7 @@
 
 Generating art for an NFT project may sound like a lot of work. And it can be if the artwork is created incorrectly or the generation process is not well organized. This tutorial aims to cover the basic steps required to generate your own 2D NFTs in a straight forward and easy to understand way.
 
-Every NFT is unique, and if we break down an NFT into its most basic components we discover that it is comprised of a random combination of different traits, separated into different 'trait categories'. When building your own NFT, you must first decide how you want to group your traits. For example, Rowdy Roos has 13 different trait categories: Accessory, Background, Base, Eyes, Hat, Item, Mouth, Pouch, Rank, Shirt, Shoes, Spring, and Tail. These are the unique building blocks that make up each Rowdy Roo.
+In order to generate our won NFTs we must first understand that each NFT is unique, and if we break down an NFT into its most basic components we discover that it is comprised of a random combination of different traits, separated into different 'trait categories'. When building your own NFT, you must first decide how you want to group your traits. For example, Rowdy Roos has 13 different trait categories: Accessory, Background, Base, Eyes, Hat, Item, Mouth, Pouch, Rank, Shirt, Shoes, Spring, and Tail. These are the unique building blocks that make up each Rowdy Roo.
 
 ## Trait Category
 Trait categories are unique to each NFT project and often change depending on the artwork and overall design of the NFT. However, every NFT belonging to a single project will have the exact same trait categories. These trait categories don’t determine rarity, they only represent the changing parts of an NFT. 
