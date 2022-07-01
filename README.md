@@ -1,7 +1,7 @@
 # Rowdy Roos Dev Tutorial
 
 
-- ![Generating Art for 2D NFTs](/NFT%20Generation/GENERATION.md)
+- [Generating Art for 2D NFTs](/NFT%20Generation/GENERATION.md)
 
 - Deploying NFTs to the mainnet
 
