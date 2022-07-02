@@ -1,7 +1,7 @@
 # Rowdy Roos Dev Tutorial
 
 
-- [Generating Art for 2D NFTs](/Generating%20Art%20For%202D%20NFTs/GENERATION.md)
+- [Generating Art for 2D NFTs](/Generating%20Art%20For%202D%20NFTs/README.md)
 
 - Deploying NFTs to the mainnet
 
