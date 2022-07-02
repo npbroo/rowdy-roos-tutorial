@@ -22,7 +22,7 @@ To the right of the ‘Robot’ sub-trait you can see that there are 400 NFTs in
 
 ![NFT with Metadata](/Generating%20Art%20For%202D%20NFTs/images/nft_with_metadata.png)
 
-Above, you can see a Rowdy Roo on the left, with all of the trait categories, and the specific sub-traits this NFT is comprised of on the right. Together, all of the traits on the right make up what is known as the 'metadata' for this Rowdy Roo. By layering these traits, we can generate this unique "kingly" Rowdy Roo.
+Above, you can see a Rowdy Roo on the left, with all of the trait categories, and the specific sub-traits this NFT is comprised of on the right. Together, all of the sub-traits make up what is known as the 'metadata' for this Rowdy Roo. By layering these traits, we can generate this unique "kingly" Rowdy Roo.
 
 ## Deconstructed NFT
 
